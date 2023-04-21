@@ -15,7 +15,7 @@ class NewVisitorTest(unittest.TestCase):
 
         # Header mentions the to-do list
         self.assertIn('To-Do', self.browser.title)
-        self.fail("Browser title was " + self.browser.title)
+        self.fail("Finish the test")
 
         # User is invited to enter to-do item
 
