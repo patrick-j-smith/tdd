@@ -1,0 +1,9 @@
+/venv/
+/.idea/
+/__pycache__/
+/superlists/__pycache__/
+geckodriver*
+db.sqlite3
+.env
+/static
+/.tmp
