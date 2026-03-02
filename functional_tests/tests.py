@@ -18,7 +18,9 @@ class NewVisitorTest(LiveServerTestCase):
         self.browser.quit()
 
     def wait_for_row_in_list_table(self, row_text):
+
         start_time = time.time()
+
         while True:
             try:
                 table = self.browser.find_element(By.ID, "id_list_table")
@@ -34,6 +36,7 @@ class NewVisitorTest(LiveServerTestCase):
                 time.sleep(0.5)
 
     def test_can_start_a_todo_list(self):
+
         self.browser.get(self.live_server_url)
 
         self.assertIn("To-Do", self.browser.title)
@@ -53,7 +56,6 @@ class NewVisitorTest(LiveServerTestCase):
         self.wait_for_row_in_list_table("2: Use peacock feathers to make a fly")
         self.wait_for_row_in_list_table("1: Buy peacock feathers")
 
-        #self.fail("Blah!")
 
     def test_multiple_users_can_start_lists_at_different_urls(self):
         self.browser.get(self.live_server_url)
