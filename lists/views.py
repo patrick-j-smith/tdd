@@ -9,7 +9,7 @@ def home_page(request):
 def new_list(request):
     nulist = List.objects.create()
     Item.objects.create(text=request.POST["item_text"], list=nulist)
-    return redirect("/lists/{nulist.id}/")
+    return redirect(f"/lists/{nulist.id}/")
 
 
 def view_list(request, list_id):
