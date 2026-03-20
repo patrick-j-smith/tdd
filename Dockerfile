@@ -9,9 +9,7 @@ RUN pip install "django<6"
 RUN pip install "python-decouple"
 
 COPY src /src
-COPY ".env" ".env"
 
 WORKDIR /src
 
-CMD ["python", "manage.py", "migrate", "--noinput"]
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8888"]
