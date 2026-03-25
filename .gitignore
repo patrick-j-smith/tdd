@@ -8,3 +8,4 @@ db.sqlite3
 /static
 /.tmp
 src/db.sqlite3static
+container.db.sqlite3
