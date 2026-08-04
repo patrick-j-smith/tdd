@@ -2,10 +2,11 @@
 /.idea/
 /__pycache__/
 /superlists/__pycache__/
+/src/superlists/__pycache__/
 geckodriver*
 db.sqlite3
 .env
-/static
 /.tmp
 src/db.sqlite3static
 container.db.sqlite3
+src/static
